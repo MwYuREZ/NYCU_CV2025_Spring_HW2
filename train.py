@@ -67,7 +67,7 @@ def train():
     val_losses = []
     min_loss = float('inf')
 
-    for epoch in range(5):
+    for epoch in range(9):
         print(f'current epoch : {epoch}')
         model.train()
         train_loss = 0

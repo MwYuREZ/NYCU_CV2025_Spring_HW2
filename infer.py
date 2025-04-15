@@ -53,9 +53,7 @@ def main():
 
     #image_id = 1
     for file_name in tqdm(image_files):
-        ##
         image_id = int(os.path.splitext(file_name)[0])
-        ##
         img = Image.open(os.path.join(test_dir, file_name)).convert("RGB")
         img_tensor = transform(img).unsqueeze(0).to(device)
 
